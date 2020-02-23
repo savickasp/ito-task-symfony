@@ -3,16 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset('css/bootstrap-v3.4.1.min.css') }}" rel="stylesheet">
+            <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+        {% endblock %}
     </head>
     <body>
-        <nav>
-
+        <nav class="navbar nav">
+            <a class="navbar-link btn btn-primary" href="{{ url('security_login') }}">login</a>
+            <a class="navbar-link btn btn-danger" href="{{ url('security_logout') }}">logout</a>
         </nav>
         {% block body %}{% endblock %}
-        <footer>
-
-        </footer>
-        {% block javascripts %}{% endblock %}
+        <footer></footer>
+        {% block javascripts %}
+            <script src="{{ asset('js/jquery-v1.12.4.min.js') }}"></script>
+            <script src="{{ asset('js/bootstrap-v3.4.1.min.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
