@@ -121,7 +121,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/includes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Twig" />
   </component>
@@ -142,7 +142,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582279104999</updated>
-      <workItem from="1582279108444" duration="24725000" />
+      <workItem from="1582279108444" duration="26110000" />
     </task>
     <servers />
   </component>
@@ -166,9 +166,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="399" y="109" width="738" height="606" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1582460926370" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582458351479">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582467384515">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582458351479" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582467384515" />
   </component>
 </project>

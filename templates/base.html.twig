@@ -13,21 +13,21 @@
 	<div class="nav-item mr-auto">
 		<a class="navbar-link" href="{{ url('front_index') }}">Home</a>
 		{% if is_granted('ROLE_ADMIN') %}
-			<a class="navbar-link" href="{{ url('security_logout') }}">user list</a>
-			<a class="navbar-link" href="{{ url('security_logout') }}">add user</a>
+			<a class="navbar-link" href="{{ url('admin_user_list') }}">Users</a>
+			<a class="navbar-link" href="{{ url('admin_user_create') }}">create user</a>
 		{% endif %}
 	</div>
 	{% if is_granted('ROLE_USER') %}
-	<div class="dropdown ml-auto">
-		<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-				aria-haspopup="true" aria-expanded="false">
-			Account
-		</button>
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-			<a class="dropdown-item" href="#">XxX</a>
-			<a class="dropdown-item" href="{{ path('security_logout') }}">logout</a>
+		<div class="dropdown ml-auto">
+			<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false">
+				Account
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="{{ url('user_account') }}">Account</a>
+				<a class="dropdown-item" href="{{ url('security_logout') }}">logout</a>
+			</div>
 		</div>
-	</div>
 	{% else %}
 		<div>
 			<a class="navbar-link btn btn-primary" href="{{ url('security_login') }}">login</a>
