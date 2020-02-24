@@ -58,7 +58,7 @@ class AdminActionController extends AbstractController
                                 $user->setPassword($request->get('password'));
                                 $user->setRoles(['ROLE_USER']);
                                 $user->setActive(1);
-                                $user->setLastLogin(new \DateTime());
+                                $user->setLastLogin();
 
                                 $em->persist($user);
                                 $em->flush();
