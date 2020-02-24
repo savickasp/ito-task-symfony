@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Delete User{% endblock %}
+
+{% block body %}
+    <div class="container h-60vh d-flex justify-content-center align-items-center">
+
+        <form method="post" class="w-50">
+            {% if(error) %}
+                <h3 class="alert-danger">{{ error }}</h3>
+            {% endif %}
+                <input class="form-control" type="text" name="string" value="{{ confirmation }}" hidden>
+            <div class="form-group mb-2">
+                <label>To confirm enter this: {{ confirmation }}</label>
+                <input class="form-control" type="text" name="confirm_string" value="" placeholder="repeat password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock %}
